@@ -1,21 +1,17 @@
-.unordered--list--tag--navigation--bar{
-    
-    border-bottom: 3px solid rgb(76, 2, 128);
-  
-
+/* flip-flop animation on navigation bar */
+/* .unordered--list--tag--navigation--bar{
+    border-bottom: 3px solid rgb(76, 2, 128); 
 }
 .navigation--bar--list--tag{
     border: 3px solid transparent;
-
     position:relative;
     bottom:-3px;
     z-index:1;
 }
 
-.navigation--bar--list--tag--1{
-    
+.navigation--bar--list--tag--1{  
     transition:0.8s;
-      background-color:rgb(11, 10, 10);
+    background-color:rgb(11, 10, 10);
     border-top: 3px solid rgb(76, 2, 128);
     border-left: 3px solid rgb(76, 2, 128);
     border-right: 3px solid rgb(76, 2, 128);
@@ -26,12 +22,9 @@
     bottom: -3px;
     left: 0;
     right: 0;
-    
- 
 }
-.navigation--bar--list--tag--2{
-    
-      background-color:rgb(11, 10, 10);
+.navigation--bar--list--tag--2{  
+    background-color:rgb(11, 10, 10);
     transition:0.8s;
     border-top: 3px solid rgb(76, 2, 128);
     border-left: 3px solid rgb(76, 2, 128);
@@ -43,39 +36,59 @@
     bottom: -3px;
     left: 0;
     right: 0;
-    
-  
 }
-.navigation--bar--list--tag--3{
-    
-      background-color:rgb(11, 10, 10);
-    transition:0.8s;
-    border-top: 3px solid rgb(76, 2, 128);
-    border-left: 3px solid rgb(76, 2, 128);
-    border-right: 3px solid rgb(76, 2, 128);
-    border-bottom:3px solid transparent;
+.navigation--bar--list--tag--3{ 
+  background-color:rgb(11, 10, 10);
+  transition:0.8s;
+  border-top: 3px solid rgb(76, 2, 128);
+  border-left: 3px solid rgb(76, 2, 128);
+  border-right: 3px solid rgb(76, 2, 128);
+  border-bottom:3px solid transparent;
   border-top-right-radius:10px;
   border-top-left-radius:10px;
-    content: '';
-    bottom: -3px;
-    left: 0;
-    right: 0;
-    
- 
-}.navigation--bar--list--tag--4{
-    
-      background-color:rgb(11, 10, 10);
-    transition:0.8s;
-    border-top: 3px solid rgb(76, 2, 128);
-    border-left: 3px solid rgb(76, 2, 128);
-    border-right: 3px solid rgb(76, 2, 128);
-    border-bottom:3px solid transparent;
+  content: '';
+  bottom: -3px;
+  left: 0;
+  right: 0;
+}
+.navigation--bar--list--tag--4{  
+  background-color:rgb(11, 10, 10);
+  transition:0.8s;
+  border-top: 3px solid rgb(76, 2, 128);
+  border-left: 3px solid rgb(76, 2, 128);
+  border-right: 3px solid rgb(76, 2, 128);
+  border-bottom:3px solid transparent;
   border-top-right-radius:10px;
   border-top-left-radius:10px;
-    content: '';
-    bottom: -3px;
-    left: 0;
-    right: 0;
-    
- 
+  content: '';
+  bottom: -3px;
+  left: 0;
+  right: 0;
+} */
+
+/* ----------Flip -flop----------- */
+
+.navigation--bar---overlay--display{
+  background-color: rgba(0, 0, 0, 0.107);
+  position: absolute;
+  width:100%;
+  z-index:1;
+  height:100%;
+  backdrop-filter: blur(20px);
+}
+.navigation--bar--tag{
+  transition: 0.9s;
+  position:absolute;
+  right:0;
+  backdrop-filter: blur(20px);
+  height:100%;
+  width: 0px;;
+}
+
+.navigation--bar--tag--active{
+  transition: 0.9s;;
+  width:35%;
+  backdrop-filter: blur(20px);
+  right:0;
+  position:absolute;
 }
