@@ -1,34 +1,32 @@
 import React from 'react'
 import data from './nav-data'
 import { NavLink } from 'react-router'
-import "./navigationBar.css"
+import "./navigationBar.css";
+import { Status } from '../ContextAPI/Status';
+import { MenuStatus } from '../ContextAPI/MenuStatus';
 export default function NavigationBar() {
- const [status,setStatus] = React.useState(JSON.parse(localStorage.getItem("status"))|| 1); 
+ const {status,setStatus} = React.useContext(Status); 
+ const {menuStatus,setMenuStatus} = React.useContext(MenuStatus)
   const handleOnClick=(id)=>{
-
     setStatus(id)
   }
-  
-React.useEffect(()=>{
     
-  localStorage.setItem("status",JSON.stringify(status))
-
-},[status,setStatus])
-  
-   
 console.log(status)
   return (
     <>
-       <div className='flex justify-center items-center w-[100%] '>
-        <ul className="flex justify-center  w-[100%] top-[150px] absolute unordered--list--tag--navigation--bar">
+       {/* <div className='flex navigation--bar---overlay--display'> */}
+        <ul className={`${menuStatus?"navigation--bar--tag":"navigation--bar--tag--active"}`}>
             {data.map((item)=> 
             <NavLink 
             onClick={()=>handleOnClick(item.id)}
-            to={item.path}><li key={item.id} className={`cursor-pointer text-[1.2rem] w-[300px] text-center p-8  text-white navigation--bar--list--tag navigation--bar--list--tag--${status === item.id ? status : 0}`}>{item.data}</li>
+            to={item.path}><li key={item.id} className={`cursor-pointer text-[1rem]  text-white`}>{item.data}</li>
             </NavLink>
             )}
+            <li className="text-white  cursor-pointer"
+            onClick={()=>setMenuStatus(prev=>!prev)}
+            >Close</li>
         </ul>
-       </div>
+       {/* </div>  */}
     </>
   )
 }
