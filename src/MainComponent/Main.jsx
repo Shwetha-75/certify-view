@@ -8,17 +8,26 @@ import UploadExcel from '../UploadExcel/UploadExcel';
 import EmailTemplate from '../EmailTemplate/EmailTemplate';
 import {Status} from '../ContextAPI/Status';
 import { MenuStatus } from '../ContextAPI/MenuStatus';
+import Cards from "../DashBoardCard/Main"
 
 const Container = styled.div`
    display:flex;
-   flex-direction:column
+   flex-direction:column;
 ` 
+const Panel=styled.div`
+  display:flex;
+   flex-direction:column;
+  align-items:center;
+   justify-content:center;
+`
 export default function Main() {
-  const [status,setStatus]=React.useState(JSON.parse(localStorage.getItem("status"))||1);
-  const [menuStatus,setMenuStatus]=React.useState(false)
+  const [status,setStatus]=React.useState(JSON.parse(sessionStorage.getItem("status"))||1);
+  const [menuStatus,setMenuStatus]=React.useState(JSON.parse(sessionStorage.getItem('menuStatus'))||false)
 
   React.useEffect(()=>{
-    localStorage.setItem("status",JSON.stringify(status))
+   
+    sessionStorage.setItem("status",JSON.stringify(status))
+    sessionStorage.setItem("menuStatus",JSON.stringify("menuStatus"))
   },[status,setStatus])
     
 
@@ -35,6 +44,9 @@ export default function Main() {
           </Routes>
         <TopNavigationBar/>
         <NavigationBar/>
+        <Panel>
+        <Cards/>
+        </Panel>
         </BrowserRouter>
         </Status.Provider>
       </MenuStatus.Provider>

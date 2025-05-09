@@ -16,12 +16,14 @@ console.log(status)
     <>
        {/* <div className='flex navigation--bar---overlay--display'> */}
         <ul className={`${menuStatus?"navigation--bar--tag":"navigation--bar--tag--active"}`}>
+            <div className='div--tag--side--menu--bar'>
             {data.map((item)=> 
             <NavLink 
             onClick={()=>handleOnClick(item.id)}
-            to={item.path}><li key={item.id} className={`cursor-pointer text-[1rem]  text-white`}>{item.data}</li>
+            to={item.path}><li key={item.id} className={`cursor-pointer text-[1rem] p-8 text-white navigation--bar--each--item--${status===item.id?status:""}`}>{item.data}</li>
             </NavLink>
             )}
+            </div>
             <li className="text-white  cursor-pointer"
             onClick={()=>setMenuStatus(prev=>!prev)}
             >Close</li>

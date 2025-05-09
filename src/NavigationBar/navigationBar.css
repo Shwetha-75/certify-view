@@ -69,7 +69,7 @@
 /* ----------Flip -flop----------- */
 
 .navigation--bar---overlay--display{
-  background-color: rgba(0, 0, 0, 0.107);
+  background-color: rgba(5, 9, 76, 0.675);
   position: absolute;
   width:100%;
   z-index:1;
@@ -79,16 +79,45 @@
 .navigation--bar--tag{
   transition: 0.9s;
   position:absolute;
+  top:10;
+  background-color: rgba(4, 51, 2, 0.724);  
   right:0;
   backdrop-filter: blur(20px);
   height:100%;
   width: 0px;;
+  white-space: nowrap;
 }
 
 .navigation--bar--tag--active{
   transition: 0.9s;;
-  width:35%;
+  background-color: rgba(12, 80, 10, 0.71);
+  height:100%;
+  width:25%;
+  white-space: nowrap;
   backdrop-filter: blur(20px);
   right:0;
   position:absolute;
+}
+
+.div--tag--side--menu--bar{
+
+   top:10px;
+
+}
+
+.navigation--bar--each--item--1{
+   background-color: rgba(9, 11, 9, 0.475);
+   transition:0.9s;
+}
+.navigation--bar--each--item--2{
+  background-color: rgba(9, 11, 9, 0.475);
+  transition:0.9s;
+}
+.navigation--bar--each--item--3{
+   background-color: rgba(9, 11, 9, 0.475);
+   transition:0.9s;
+}
+.navigation--bar--each--item--4{
+   background-color: rgba(9, 11, 9, 0.475);
+   transition:0.9s;
 }
