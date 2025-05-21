@@ -17,39 +17,40 @@ const Container = styled.div`
 const Panel=styled.div`
   display:flex;
    flex-direction:column;
-  align-items:center;
    justify-content:center;
+    align-items:center;
 `
 export default function Main() {
+
   const [status,setStatus]=React.useState(JSON.parse(sessionStorage.getItem("status"))||1);
-  const [menuStatus,setMenuStatus]=React.useState(JSON.parse(sessionStorage.getItem('menuStatus'))||false)
+  const [menuStatus,setMenuStatus]=React.useState(()=>JSON.parse(sessionStorage.getItem('menuStatus'))||true)
 
   React.useEffect(()=>{
    
     sessionStorage.setItem("status",JSON.stringify(status))
-    sessionStorage.setItem("menuStatus",JSON.stringify("menuStatus"))
-  },[status,setStatus])
+    sessionStorage.setItem("menuStatus",JSON.stringify(menuStatus))
+    
+   
+    
+  },[status,setStatus,menuStatus])
     
 
   return (
-    <Container>
+    <Container className='relative container--main--tag' >
       <MenuStatus.Provider value={{menuStatus,setMenuStatus}}>
         <Status.Provider value={{status,setStatus}}>
         <BrowserRouter>
           <Routes>
-          <Route path="/" ></Route>
+          <Route path="/" element={<Cards/>}></Route>
           <Route path="/sendemail" element={<SendEmail/>}></Route>
           <Route path="/uploadexcel" element={<UploadExcel/>}></Route>
           <Route path="/emailtemplate" element={<EmailTemplate/>}></Route>
           </Routes>
         <TopNavigationBar/>
-        <NavigationBar/>
-        <Panel>
-        <Cards/>
-        </Panel>
+        <NavigationBar/>                                                                                          
         </BrowserRouter>
         </Status.Provider>
-      </MenuStatus.Provider>
+      </MenuStatus.Provider>                                                                                                                                            
     </Container>
   )
 }

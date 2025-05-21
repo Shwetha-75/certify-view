@@ -17,7 +17,7 @@ export default function TopNavigationBar() {
     <>
         <div className='w-[100%] flex justify-center absolute top-5 items-center'>
             <ul className='flex w-[80%] justify-between p-6'>
-                <li className='text-white text-[1.3rem] cursor-pointer text-[2.3rem] italic' onClick={handleOnClickLogo}>
+                <li className='text-white text-[1.3rem] cursor-pointer text-[2.3rem] italic title---logo---tag' onClick={handleOnClickLogo}>
                   Certify
                 </li>
                  {/* <li className='text-white text-[1.3rem]'>SigIn/SigUp</li> */}

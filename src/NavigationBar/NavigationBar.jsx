@@ -11,24 +11,24 @@ export default function NavigationBar() {
     setStatus(id)
   }
     
-console.log(status)
+console.log("Menu Status :",menuStatus)
   return (
     <>
-       {/* <div className='flex navigation--bar---overlay--display'> */}
+
         <ul className={`${menuStatus?"navigation--bar--tag":"navigation--bar--tag--active"}`}>
             <div className='div--tag--side--menu--bar'>
             {data.map((item)=> 
             <NavLink 
             onClick={()=>handleOnClick(item.id)}
-            to={item.path}><li key={item.id} className={`cursor-pointer text-[1rem] p-8 text-white navigation--bar--each--item--${status===item.id?status:""}`}>{item.data}</li>
+            to={item.path}><li key={item.id} className={`cursor-pointer text-[1rem] ${status==item.id ? "border border-green-500":""} p-8 text-white navigation--bar--each--item--${status===item.id?status:""}`}>{item.data}</li>
             </NavLink>
             )}
-            </div>
-            <li className="text-white  cursor-pointer"
-            onClick={()=>setMenuStatus(prev=>!prev)}
+            <li className="text-white p-8 text-[1rem] close--button--tag cursor-pointer"
+            onClick={()=>setMenuStatus(true)}
             >Close</li>
+            </div>
         </ul>
-       {/* </div>  */}
+       
     </>
   )
 }
