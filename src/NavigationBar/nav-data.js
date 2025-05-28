@@ -12,13 +12,14 @@ const data = [
     {
         id:3,
         data:'Upload Excel',
-        path:'uploademail'
+        path:'uploadexcel'
     },
    {
       id:4,
       data:'Email Template',
       path:'/emailtemplate'
-   }
+   },
+   
 ]
 
 
