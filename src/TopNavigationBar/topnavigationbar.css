@@ -1,0 +1,58 @@
+@media(max-width:480px){
+    
+    .title---logo---tag{
+         width:80px;
+         padding: 0;
+         height:50px;
+         margin:0;  
+    }
+}
+/* new phones in portrait  */
+@media(min-width:480px) and (max-width:768px){
+     .title---logo---tag{
+         width:100px;
+         padding: 0;
+         height:50px;
+         margin:0;  
+    }
+} 
+
+/* tabs portrait*/
+@media(min-width:768px) and (max-width:992px){
+     .title---logo---tag{
+         width:120px;
+         padding: 0;
+         height:50px;
+         margin:0; 
+    }  
+}
+
+/* tabs landscape */
+@media(min-width:992px) and (max-width:1200px){
+    .title---logo---tag{
+         width:120px;
+         padding: 0;
+         height:50px;
+         margin:0; 
+    }
+}
+
+/* laptop desktop */
+@media(min-width:1200px) and (max-width:1440px){
+  .title---logo---tag{
+         width:120px;
+         padding: 0;
+         height:50px;
+         margin:0; 
+    }
+}
+
+/* large desktop */
+@media(min-width:1440px){
+  .title---logo---tag{
+         width:120px;
+         padding: 0;
+         height:50px;
+         margin:0; 
+    }
+}

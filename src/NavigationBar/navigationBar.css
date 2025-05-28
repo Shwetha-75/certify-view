@@ -1,123 +1,898 @@
-/* flip-flop animation on navigation bar */
-/* .unordered--list--tag--navigation--bar{
-    border-bottom: 3px solid rgb(76, 2, 128); 
-}
-.navigation--bar--list--tag{
-    border: 3px solid transparent;
-    position:relative;
-    bottom:-3px;
-    z-index:1;
-}
-
-.navigation--bar--list--tag--1{  
-    transition:0.8s;
-    background-color:rgb(11, 10, 10);
-    border-top: 3px solid rgb(76, 2, 128);
-    border-left: 3px solid rgb(76, 2, 128);
-    border-right: 3px solid rgb(76, 2, 128);
-    border-bottom:3px solid transparent;
-    border-top-right-radius:10px;
-    border-top-left-radius:10px; 
-    content: '';
-    bottom: -3px;
-    left: 0;
-    right: 0;
-}
-.navigation--bar--list--tag--2{  
-    background-color:rgb(11, 10, 10);
-    transition:0.8s;
-    border-top: 3px solid rgb(76, 2, 128);
-    border-left: 3px solid rgb(76, 2, 128);
-    border-right: 3px solid rgb(76, 2, 128);
-    border-bottom:3px solid transparent;
-    border-top-right-radius:10px;
-    border-top-left-radius:10px; 
-    content: '';
-    bottom: -3px;
-    left: 0;
-    right: 0;
-}
-.navigation--bar--list--tag--3{ 
-  background-color:rgb(11, 10, 10);
-  transition:0.8s;
-  border-top: 3px solid rgb(76, 2, 128);
-  border-left: 3px solid rgb(76, 2, 128);
-  border-right: 3px solid rgb(76, 2, 128);
-  border-bottom:3px solid transparent;
-  border-top-right-radius:10px;
-  border-top-left-radius:10px;
-  content: '';
-  bottom: -3px;
-  left: 0;
-  right: 0;
-}
-.navigation--bar--list--tag--4{  
-  background-color:rgb(11, 10, 10);
-  transition:0.8s;
-  border-top: 3px solid rgb(76, 2, 128);
-  border-left: 3px solid rgb(76, 2, 128);
-  border-right: 3px solid rgb(76, 2, 128);
-  border-bottom:3px solid transparent;
-  border-top-right-radius:10px;
-  border-top-left-radius:10px;
-  content: '';
-  bottom: -3px;
-  left: 0;
-  right: 0;
-} */
-
 /* ----------Flip -flop----------- */
 
-.navigation--bar---overlay--display{
-  background-color: rgba(5, 9, 76, 0.675);
-  position: absolute;
-  width:100%;
-  z-index:1;
-  height:100%;
-  backdrop-filter: blur(20px);
-}
-.navigation--bar--tag{
-  transition: 0.9s;
-  position:absolute;
-  top:10;
-  background-color: rgba(4, 51, 2, 0.724);  
-  right:0;
-  backdrop-filter: blur(20px);
-  height:100%;
-  width: 0px;;
-  white-space: nowrap;
+
+
+/* older phones */
+@media(max-width:480px) {
+   .navigation--bar--tag {
+      transition: 1.3s;
+      position: absolute;
+      top: 10;
+      background-color: rgba(11, 11, 11, 0.72);
+      right: 0;
+      backdrop-filter: blur(20px);
+      height: 100vh;
+      width: 0px;
+      white-space: nowrap;
+      border: none;
+      /* border-left:4px solid transparent;; */
+   }
+
+   .navigation--bar--tag--active {
+      transition: 1.3s;
+      background-color: rgba(11, 11, 11, 0.72);
+      height: 100vh;
+      width: 60%;
+      white-space: nowrap;
+      backdrop-filter: blur(20px);
+      color: rgb(196, 195, 195);
+      right: 0;
+      z-index: 999;
+      position: absolute;
+      border: none;
+      /* border-left:4px solid transparent;; */
+   }
+
+   .navigation--bar--tag--light {
+      transition: 1.3s;
+      position: absolute;
+      top: 10;
+      background-color: white;
+      color: darkgray;
+      right: 0;
+      backdrop-filter: blur(20px);
+      height: 100vh;
+      width: 0px;
+      white-space: nowrap;
+
+   }
+
+   .navigation--bar--tag--active--light {
+      transition: 1.3s;
+      background-color: white;
+      color: rgb(47, 47, 47);
+      border: none;
+      /* border-left:4px solid transparent;; */
+      height: 100vh;
+      width: 60%;
+      white-space: nowrap;
+      backdrop-filter: blur(20px);
+      right: 0;
+      z-index: 999;
+      position: absolute;
+
+   }
+
+   .div--tag--side--menu--bar {
+      top: 10px;
+   }
+
+   .navigation--bar--each--item--1 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+      transition: 0.9s;
+   }
+
+   .navigation--bar--each--item--2 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+      transition: 0.9s;
+   }
+
+   .navigation--bar--each--item--3 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+
+      transition: 0.9s;
+   }
+
+   .navigation--bar--each--item--4 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+      transition: 0.9s;
+   }
+
+   /* ----------------------------- */
+
+   .navigation--bar--each--light--item--1 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+   }
+
+   .navigation--bar--each--light--item--2 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+
+   }
+
+   .navigation--bar--each--light--item--3 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+
+   }
+
+   .navigation--bar--each--light--item--4 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+
+   }
+
+   .close--button--tag {
+      transition: 0.9s;
+      color: rgb(226, 40, 40);
+      white-space: nowrap;
+   }
+
+   .close--button--tag:hover {
+      transition: 0.9s;
+      color: rgb(255, 0, 0);
+      white-space: nowrap;
+   }
+
+   .hamburger--symbol--tag {
+      transition: 0.9s;
+      font-size: 1.4rem;
+   }
 }
 
-.navigation--bar--tag--active{
-  transition: 0.9s;;
-  background-color: rgba(12, 80, 10, 0.71);
-  height:100%;
-  width:25%;
-  white-space: nowrap;
-  backdrop-filter: blur(20px);
-  right:0;
-  position:absolute;
+/* new phones in portrait  */
+@media(min-width:480px) and (max-width:768px) {
+   .title---logo---tag {
+      font-size: 1.5rem;
+      font-weight: bold;
+   }
+
+   .title---logo---tag--light {
+      font-size: 1.5rem;
+      color: black;
+      font-weight: bold;
+   }
+
+   .navigation--bar--tag {
+      transition: 1.3s;
+      position: absolute;
+      top: 10;
+      background-color: rgba(11, 11, 11, 0.72);
+      right: 0;
+      backdrop-filter: blur(20px);
+      height: 100vh;
+      width: 0px;
+      border: none;
+      /* border-left:4px solid transparent;; */
+      white-space: nowrap;
+   }
+
+   .navigation--bar--tag--active {
+      transition: 1.3s;
+      background-color: rgba(11, 11, 11, 0.72);
+      height: 100vh;
+      width: 40%;
+      white-space: nowrap;
+      backdrop-filter: blur(20px);
+      color: rgb(196, 195, 195);
+      right: 0;
+      position: absolute;
+      border: none;
+      /* border-left:4px solid transparent;; */
+   }
+
+   .navigation--bar--tag--light {
+      transition: 1.3s;
+      position: absolute;
+      top: 10;
+      background-color: white;
+      color: darkgray;
+      right: 0;
+      backdrop-filter: blur(20px);
+      height: 100vh;
+      width: 0px;
+      border: none;
+      /* border-left:4px solid transparent;; */
+      white-space: nowrap;
+   }
+
+   .navigation--bar--tag--active--light {
+      transition: 1.3s;
+      background-color: white;
+      height: 100vh;
+      width: 40%;
+      color: rgb(47, 47, 47);
+      border: none;
+      /* border-left:4px solid transparent;; */
+      white-space: nowrap;
+      backdrop-filter: blur(20px);
+      right: 0;
+      position: absolute;
+   }
+
+   .div--tag--side--menu--bar {
+
+      top: 10px;
+
+   }
+
+   .navigation--bar--each--item--1 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+
+      transition: 0.9s;
+   }
+
+   .navigation--bar--each--item--2 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+
+      transition: 0.9s;
+   }
+
+   .navigation--bar--each--item--3 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+
+      transition: 0.9s;
+   }
+
+   .navigation--bar--each--item--4 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+      transition: 0.9s;
+   }
+
+   /* ----------------- */
+
+
+   .navigation--bar--each--light--item--1 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+   }
+
+   .navigation--bar--each--light--item--2 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+
+   }
+
+   .navigation--bar--each--light--item--3 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+
+   }
+
+   .navigation--bar--each--light--item--4 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+
+   }
+
+   .close--button--tag {
+      transition: 0.9s;
+      color: rgb(226, 40, 40);
+   }
+
+   .close--button--tag:hover {
+      transition: 0.9s;
+      color: rgb(255, 0, 0);
+   }
+
+   .hamburger--symbol--tag {
+      transition: 0.9s;
+      font-size: 1.6rem;
+   }
 }
 
-.div--tag--side--menu--bar{
+/* tabs portrait*/
+@media(min-width:768px) and (max-width:992px) {
+   .title---logo---tag {
+      font-size: 1.7rem;
+      font-weight: bold;
+   }
 
-   top:10px;
+   .title---logo---tag--light {
+      font-size: 1.7rem;
+      color: black;
+      font-weight: bold;
+   }
 
+   .navigation--bar--tag {
+      transition: 1.3s;
+      position: absolute;
+      top: 10;
+      background-color: rgba(11, 11, 11, 0.72);
+      right: 0;
+      backdrop-filter: blur(20px);
+      height: 100vh;
+      width: 0px;
+      ;
+      white-space: nowrap;
+      border: none;
+      /* border-left:4px solid transparent;; */
+   }
+
+   .navigation--bar--tag--active {
+      transition: 1.3s;
+      background-color: rgba(11, 11, 11, 0.72);
+      height: 100%;
+      width: 40%;
+      white-space: nowrap;
+      border: none;
+      /* border-left:4px solid transparent;; */
+      /* border-left: 3px solid rgb(32, 32, 32);
+      ; */
+      color: rgb(196, 195, 195);
+      backdrop-filter: blur(20px);
+      right: 0;
+      position: absolute;
+   }
+
+   .navigation--bar--tag--light {
+      transition: 1.3s;
+      position: absolute;
+      top: 10;
+      background-color: white;
+      color: darkgray;
+      right: 0;
+      backdrop-filter: blur(20px);
+      height: 100vh;
+      width: 0px;
+      ;
+      white-space: nowrap;
+      border: none;
+      /* border-left:4px solid transparent;; */
+   }
+
+   .navigation--bar--tag--active--light {
+      transition: 1.3s;
+      background-color: white;
+      height: 100%;
+      width: 40%;
+      white-space: nowrap;
+      color: rgb(47, 47, 47);
+      border: none;
+      /* border-left:4px solid transparent;; */
+      backdrop-filter: blur(20px);
+      right: 0;
+      position: absolute;
+   }
+
+   .div--tag--side--menu--bar {
+      top: 10px;
+   }
+
+   .navigation--bar--each--item--1 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+
+      transition: 0.9s;
+   }
+
+   .navigation--bar--each--item--2 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+
+      transition: 0.9s;
+   }
+
+   .navigation--bar--each--item--3 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+
+      transition: 0.9s;
+   }
+
+   .navigation--bar--each--item--4 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+      transition: 0.9s;
+   }
+
+
+   .navigation--bar--each--light--item--1 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+   }
+
+   .navigation--bar--each--light--item--2 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+
+   }
+
+   .navigation--bar--each--light--item--3 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+
+   }
+
+   .navigation--bar--each--light--item--4 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+
+   }
+
+   .close--button--tag {
+      transition: 0.9s;
+      color: rgb(226, 40, 40);
+   }
+
+   .close--button--tag:hover {
+      transition: 0.9s;
+      color: rgb(255, 0, 0);
+   }
+
+   .hamburger--symbol--tag {
+      transition: 0.9s;
+      font-size: 1.8rem;
+   }
 }
 
-.navigation--bar--each--item--1{
-   background-color: rgba(9, 11, 9, 0.475);
-   transition:0.9s;
+/* tabs landscape */
+@media(min-width:992px) and (max-width:1200px) {
+   .title---logo---tag {
+      font-size: 2rem;
+      font-weight: bold;
+   }
+
+   .title---logo---tag--light {
+      font-size: 2rem;
+      color: black;
+      font-weight: bold;
+   }
+
+   .navigation--bar---overlay--display {
+      background-color: rgba(5, 9, 76, 0.675);
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+      height: 100%;
+      backdrop-filter: blur(20px);
+   }
+
+   .navigation--bar--tag {
+      transition: 0.9s;
+      position: absolute;
+      top: 10;
+      background-color: rgba(11, 11, 11, 0.72);
+      right: 0;
+      backdrop-filter: blur(20px);
+      height: 100vh;
+      width: 0px;
+      white-space: nowrap;
+      border: none;
+      /* border-left:4px solid transparent;; */
+   }
+
+   .navigation--bar--tag--active {
+      transition: 0.9s;
+      background-color: rgba(11, 11, 11, 0.72);
+      height: 100vh;
+      width: 30%;
+      white-space: nowrap;
+      border: none;
+      /* border-left:4px solid transparent;; */
+      color: rgb(196, 195, 195);
+      backdrop-filter: blur(20px);
+      right: 0;
+      z-index: 10;
+      position: absolute;
+   }
+
+   .navigation--bar--tag--light {
+      transition: 0.9s;
+      position: absolute;
+      top: 10;
+      background-color: white;
+      right: 0;
+      backdrop-filter: blur(20px);
+      height: 100vh;
+      width: 0px;
+      white-space: nowrap;
+      border: none;
+      /* border-left:4px solid transparent;; */
+   }
+
+   .navigation--bar--tag--active--light {
+      transition: 0.9s;
+      background-color: white;
+      height: 100vh;
+      width: 30%;
+      white-space: nowrap;
+      color: rgb(47, 47, 47);
+      border: none;
+      /* border-left:4px solid transparent;; */
+      backdrop-filter: blur(20px);
+      right: 0;
+      z-index: 10;
+      position: absolute;
+   }
+
+   .div--tag--side--menu--bar {
+
+      top: 10px;
+
+   }
+
+   .navigation--bar--each--item--1 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+
+      transition: 0.9s;
+   }
+
+   .navigation--bar--each--item--2 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+
+      transition: 0.9s;
+   }
+
+   .navigation--bar--each--item--3 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+
+      transition: 0.9s;
+   }
+
+   .navigation--bar--each--item--4 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+      transition: 0.9s;
+   }
+
+   /* -------- */
+
+   .navigation--bar--each--light--item--1 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+   }
+
+   .navigation--bar--each--light--item--2 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+
+   }
+
+   .navigation--bar--each--light--item--3 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+
+   }
+
+   .navigation--bar--each--light--item--4 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+
+   }
+
+   .close--button--tag {
+      transition: 0.9s;
+      color: rgb(226, 40, 40);
+   }
+
+   .close--button--tag:hover {
+      transition: 0.9s;
+      color: rgb(255, 0, 0);
+   }
+
+   .hamburger--symbol--tag {
+      transition: 0.9s;
+      font-size: 2rem;
+   }
 }
-.navigation--bar--each--item--2{
-  background-color: rgba(9, 11, 9, 0.475);
-  transition:0.9s;
+
+/* laptop desktop */
+@media(min-width:1200px) and (max-width:1440px) {
+   .title---logo---tag {
+      font-size: 2.2rem;
+      font-weight: bold;
+   }
+
+   .title---logo---tag--light {
+      font-size: 2.2rem;
+      color: black;
+      font-weight: bold;
+   }
+
+   .navigation--bar--tag {
+      transition: 1.3s;
+      position: absolute;
+      top: 10;
+      background-color: rgba(11, 11, 11, 0.72);
+      right: 0;
+      backdrop-filter: blur(20px);
+      height: 100vh;
+      width: 0px;
+      ;
+      white-space: nowrap;
+      border: none;
+      /* border-left:4px solid transparent;; */
+   }
+
+   .navigation--bar--tag--active {
+      transition: 1.3s;
+      background-color: rgba(11, 11, 11, 0.72);
+      height: 100vh;
+      width: 20%;
+      white-space: nowrap;
+      color: rgb(196, 195, 195);
+      border: none;
+      /* border-left:4px solid transparent;; */
+      backdrop-filter: blur(20px);
+      right: 0;
+      position: absolute;
+   }
+
+   .navigation--bar--tag--light {
+      transition: 1.3s;
+      position: absolute;
+      top: 10;
+      background-color: white;
+      color: darkgray;
+      right: 0;
+      backdrop-filter: blur(20px);
+      height: 100vh;
+      width: 0px;
+      ;
+      white-space: nowrap;
+      border: none;
+      /* border-left:4px solid transparent;; */
+   }
+
+   .navigation--bar--tag--active--light {
+      transition: 1.3s;
+      background-color: rgb(255, 255, 255);
+      height: 100vh;
+      width: 20%;
+      white-space: nowrap;
+      color: rgb(47, 47, 47);
+      border: none;
+      /* border-left:4px solid transparent;; */
+      backdrop-filter: blur(20px);
+      right: 0;
+      position: absolute;
+   }
+
+   .div--tag--side--menu--bar {
+
+      top: 10px;
+
+   }
+
+   .navigation--bar--each--item--1 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+
+      transition: 0.9s;
+   }
+
+   .navigation--bar--each--item--2 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+
+      transition: 0.9s;
+   }
+
+   .navigation--bar--each--item--3 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+
+      transition: 0.9s;
+   }
+
+   .navigation--bar--each--item--4 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+      transition: 0.9s;
+   }
+
+   /* --------------------------- */
+
+   .navigation--bar--each--light--item--1 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+   }
+
+   .navigation--bar--each--light--item--2 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+
+   }
+
+   .navigation--bar--each--light--item--3 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+
+   }
+
+   .navigation--bar--each--light--item--4 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+
+   }
+
+   .close--button--tag {
+      transition: 0.9s;
+      color: rgb(226, 40, 40);
+   }
+
+   .close--button--tag:hover {
+      transition: 0.9s;
+      color: rgb(255, 0, 0);
+   }
+
+   .hamburger--symbol--tag {
+      transition: 0.9s;
+      font-size: 1.4rem;
+   }
 }
-.navigation--bar--each--item--3{
-   background-color: rgba(9, 11, 9, 0.475);
-   transition:0.9s;
-}
-.navigation--bar--each--item--4{
-   background-color: rgba(9, 11, 9, 0.475);
-   transition:0.9s;
+
+/* large desktop */
+@media(min-width:1440px) {
+   .title---logo---tag {
+      font-size: 2.4rem;
+      font-weight: bold;
+   }
+
+   .title---logo---tag--light {
+      font-size: 2.4rem;
+      color: black;
+      font-weight: bold;
+   }
+
+   .navigation--bar--tag {
+      transition: 1.3s;
+      position: absolute;
+      top: 10;
+      background-color: rgba(11, 11, 11, 0.72);
+      right: 0;
+      backdrop-filter: blur(20px);
+      height: 100vh;
+      width: 0px;
+      ;
+      white-space: nowrap;
+      border: none;
+      /* border-left:4px solid transparent;; */
+   }
+
+   .navigation--bar--tag--active {
+      transition: 1.3s;
+      background-color: rgba(11, 11, 11, 0.72);
+      height: 100vh;
+      width: 18%;
+      white-space: nowrap;
+      color: rgb(196, 195, 195);
+      /* border-left: 3px solid rgba(27, 27, 27, 0.997);; */
+      backdrop-filter: blur(20px);
+      right: 0;
+      position: absolute;
+      border: none;
+      /* border-left:4px solid transparent;; */
+   }
+
+   .navigation--bar--tag--light {
+      transition: 1.3s;
+      position: absolute;
+      top: 10;
+      background-color: white;
+      color: darkgray;
+      right: 0;
+      backdrop-filter: blur(20px);
+      height: 100vh;
+      width: 0px;
+      ;
+      white-space: nowrap;
+      border: none;
+      /* border-left:4px solid transparent;; */
+   }
+
+   .navigation--bar--tag--active--light {
+      transition: 1.3s;
+      background-color: white;
+      height: 100vh;
+      width: 18%;
+      white-space: nowrap;
+      color: rgb(47, 47, 47);
+      /* border-left: 3px solid rgba(169, 169, 169, 0.256);; */
+      backdrop-filter: blur(20px);
+      right: 0;
+      position: absolute;
+      border: none;
+      /* border-left:4px solid transparent;; */
+   }
+
+   .div--tag--side--menu--bar {
+
+      top: 10px;
+
+   }
+
+   .navigation--bar--each--item--1 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+
+      transition: 0.9s;
+   }
+
+   .navigation--bar--each--item--2 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+
+      transition: 0.9s;
+   }
+
+   .navigation--bar--each--item--3 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+
+      transition: 0.9s;
+   }
+
+   .navigation--bar--each--item--4 {
+      color: rgb(255, 255, 255);
+      background-color: rgba(24, 24, 24, 0.286);
+      transition: 0.9s;
+   }
+
+   /* -------------------------- */
+
+   .navigation--bar--each--light--item--1 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+   }
+
+   .navigation--bar--each--light--item--2 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+
+   }
+
+   .navigation--bar--each--light--item--3 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+
+   }
+
+   .navigation--bar--each--light--item--4 {
+      color: black;
+      transition: 0.9s;
+      background-color: rgba(223, 223, 223, 0.444);
+
+   }
+
+   .close--button--tag {
+      transition: 0.9s;
+      color: rgb(226, 40, 40);
+   }
+
+   .close--button--tag:hover {
+      transition: 0.9s;
+      color: rgb(255, 0, 0);
+   }
+
+   .hamburger--symbol--tag {
+      transition: 0.9s;
+      font-size: 2rem;
+   }
 }
