@@ -1,6 +1,6 @@
 import React from 'react'
 import Theme from "../ContextAPI/Theme";
-import "./PageNotFound.css"
+import "./pageNotFound.css"
 
 export default function PageNotfound() {
   const {theme} = React.useContext(Theme);
