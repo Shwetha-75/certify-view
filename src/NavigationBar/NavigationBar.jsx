@@ -18,7 +18,7 @@ export default function NavigationBar() {
 
       <ul className={`${menuStatus ? theme ? "navigation--bar--tag--active--light" : "navigation--bar--tag--active" : theme ? "navigation--bar--tag--light" : "navigation--bar--tag"} shadow-xl`}>
 
-        <li className="p-3 absolute right-1 top-4">
+        <li className="p-1 absolute right-1 top-4">
           <svg xmlns="http://www.w3.org/2000/svg"
             onClick={() => setMenuStatus(prev => !prev)}
             height="24px" viewBox="0 -960 960 960" width="24px"
@@ -39,7 +39,7 @@ export default function NavigationBar() {
                   className=
                   {`cursor-pointer text-[1rem]
                    
-                  p-8 ${theme ? `navigation--bar--each--light--item--${status === item.id ? status : ""}` : `navigation--bar--each--item--${status === item.id ? status : ""}`}`}
+                  p-5 ${theme ? `navigation--bar--each--light--item--${status === item.id ? status : ""}` : `navigation--bar--each--item--${status === item.id ? status : ""}`}`}
                 >{item.data}</li>
               </NavLink>
             )}
@@ -47,7 +47,7 @@ export default function NavigationBar() {
             className="flex  
             text-center
         
-            gap-[1rem] theme---tag p-8 text-[1rem] 
+            gap-[1rem] theme---tag p-5 text-[1rem] 
             cursor-pointer"
           >Theme
             {theme ?

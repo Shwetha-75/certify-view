@@ -40,7 +40,7 @@ function App() {
   React.useEffect(()=>{
     const element=document.querySelector('html')
       element.style.transition='1.5s';
-      element.style.backgroundColor=theme?"white":'rgb(12, 12, 12)';
+      element.style.backgroundColor=theme?"white":'rgb(31, 31, 31)';
   },[setTheme,theme])
 
   return (
