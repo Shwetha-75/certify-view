@@ -7,7 +7,6 @@ import NavigationBar from "../NavigationBar/NavigationBar";
 import PageNotFound from "../CustomErrorPage/404PageNotfound";
 
 
-
 export default function Main() {
 
 

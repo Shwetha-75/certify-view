@@ -37,14 +37,11 @@ function App() {
 
   }, [status, setStatus, menuStatus,theme]);
 
-  React.useEffect(()=>{
-    const element=document.querySelector('html')
-      element.style.transition='1.5s';
-      element.style.backgroundColor=theme?"white":'rgb(31, 31, 31)';
-  },[setTheme,theme])
+
 
   return (
-  <Container>
+  <Container className={`${theme?"app--container--light":"app--container--dark"}`}
+  >
     <BrowserRouter>
         <Theme.Provider value={{theme,setTheme}}>
         <MenuStatus.Provider value={{menuStatus,setMenuStatus}}>

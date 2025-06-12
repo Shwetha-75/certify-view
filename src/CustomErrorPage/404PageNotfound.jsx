@@ -6,6 +6,8 @@ import "./pageNotFound.css"
 
 export default function PageNotfound() {
   const {theme} = React.useContext(Theme);
+  const [customPageInput,setCustomPageInput]=React.useState('');
+
   return (
     <div className={`${theme?"page--not--found--tag--light":"page--not--found--tag"}`}>
          {/* <img
@@ -15,10 +17,17 @@ export default function PageNotfound() {
 
          {/* <h1>Oops ! Page Does Not Exist</h1> */}
          <div className={`w-[60%] p-3 gap-[1.2rem] flex `}>
+          <div className="w-[100%] border border-slate-500">
           <input
-           className={`w-full bg-transparent h-[60px] text-center ${theme?"input--tag--div":"input--tag--div--dark"}`}
+          
+           className={`w-full bg-transparent h-[60px] text-left ${theme?"input--tag--div":"input--tag--div--dark"}`}
            placeholder='Oops! Page Not Found Type Home...'
+           value={customPageInput||""}
+           onChange={(e)=>{
+            setCustomPageInput(e.target.value)
+           }}
           /> 
+          </div>
           <div className='flex flex-col justify-center items-center '>
             <svg xmlns="http://www.w3.org/2000/svg" 
             height="34px" 
@@ -30,6 +39,9 @@ export default function PageNotfound() {
           </div>
 
          </div>
+          <div className="w-[60%] border border-slate-500 p-3">
+            home
+            </div>
     </div>
   )
 }

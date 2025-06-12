@@ -1,9 +1,9 @@
-import React from 'react'
 
+import Main from "../DashBoardCard/Main"
 export default function EmailTemplate() {
   return (
     <div>
-            <h1 className="text-white"></h1>
+          <Main/>
     </div>
   )
 }

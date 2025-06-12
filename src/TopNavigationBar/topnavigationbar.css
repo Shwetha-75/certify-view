@@ -10,7 +10,6 @@
         font-size: 1rem;
         padding: 0;
         font-family: 'Noto-Serif', serif;
-        ;
         color: black;
         margin: 0;
         font-weight: bold;
@@ -176,4 +175,17 @@
         font-weight: bold;
         font-style: italic;
     }
+}
+.navigation-top--bar--tag--light{
+    position:fixed;
+    z-index:999;
+    top:0;
+    background-color: white;
+}
+
+.navigation-top--bar--tag--dark{
+    position:fixed;
+    z-index:999;
+    top:0;
+    background-color: rgb(31, 31, 31);
 }
