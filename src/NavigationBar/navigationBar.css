@@ -776,7 +776,7 @@
 
    .navigation--bar--tag {
       transition: 1.3s;
-      position: fixed;
+      /* position: fixed; */
       top: 10;
       background-color: rgba(11, 11, 11, 0.72);
       left: 0;
@@ -795,13 +795,13 @@
       transition: 1.3s;
       background-color: rgba(11, 11, 11, 0.72);
       height: 100vh;
-      width: 18%;
+      width: 100%;
       white-space: nowrap;
       color: rgb(196, 195, 195);
       /* border-left: 3px solid rgba(27, 27, 27, 0.997);; */
       backdrop-filter: blur(20px);
       left: 0;
-      position: fixed;
+      /* position: fixed; */
       border: none;
       z-index: 999;
 
@@ -810,11 +810,10 @@
 
    .navigation--bar--tag--light {
       transition: 1.3s;
-      position: fixed;
+      /* position: fixed; */
       top: 10;
       background-color: white;
       color: rgb(114, 114, 114);
-
       left: 0;
       backdrop-filter: blur(20px);
       height: 100vh;
@@ -831,13 +830,13 @@
       transition: 1.3s;
       background-color: white;
       height: 100vh;
-      width: 18%;
+      width: 100%;
       white-space: nowrap;
       color: rgb(114, 114, 114);
       /* border-left: 3px solid rgba(169, 169, 169, 0.256);; */
       backdrop-filter: blur(20px);
       left: 0;
-      position: fixed;
+      /* position: fixed; */
       border: none;
       z-index: 999;
 

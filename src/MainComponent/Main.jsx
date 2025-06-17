@@ -14,7 +14,7 @@ export default function Main() {
   return (
     <>
 
-      <NavigationBar /> 
+      {/* <NavigationBar />  */}
        <Routes>
         <Route index path="/" element={<MainDashBoard />}></Route>
         <Route path="/sendemail" element={<SendEmail />}></Route>

@@ -8,7 +8,10 @@ import Theme from '../ContextAPI/Theme';
 export default function NavigationBar() {
 
   const { status, setStatus } = React.useContext(Status);
-  const { menuStatus,setMenuStatus} = React.useContext(MenuStatus)
+  const { menuStatus
+    // ,setMenuStatus
+  
+  } = React.useContext(MenuStatus)
   const handleOnClick = (id) => {
     setStatus(id)
   }
@@ -17,8 +20,8 @@ export default function NavigationBar() {
   return (
     <>
 
-      <ul className={`relative ${menuStatus ? theme ? "navigation--bar--tag--active--light" : "navigation--bar--tag--active" : theme ? "navigation--bar--tag--light" : "navigation--bar--tag"} shadow-xl`}>
-        <li className="p-1 absolute right-5 top-4">
+      <ul className={`absolute ${menuStatus ? theme ? "navigation--bar--tag--active--light" : "navigation--bar--tag--active" : theme ? "navigation--bar--tag--light" : "navigation--bar--tag"}`}>
+        {/* <li className="p-1 absolute right-5 top-4">
             {menuStatus ? 
                 //  <svg xmlns="http://www.w3.org/2000/svg" 
                 //  height="24px" viewBox="0 -960 960 960" width="24px"
@@ -34,7 +37,8 @@ export default function NavigationBar() {
                      width="24px" 
                      fill={`${theme?"black":"rgba(255, 255, 255, 0.86)"}`}
                      className='cursor-pointer'
-                     onClick={()=>setMenuStatus(prev=>!prev)}>
+                     onClick={()=>setMenuStatus(prev=>!prev)}
+                     >
                     <path d="M440-280v-400L240-480l200 200Zm80 160h80v-720h-80v720Z"
                     />
                     </svg>
@@ -49,9 +53,9 @@ export default function NavigationBar() {
                        </svg>
                     
                     }
-        </li>
+        </li> */}
 
-        <div className='div--tag--side--menu--bar'>
+        <div className='div--tag--side--menu--bar  '>
           {data.map((item) =>
 
               <NavLink
@@ -65,11 +69,7 @@ export default function NavigationBar() {
               </NavLink>
             )}
           <li
-            className="flex  
-            text-center
-        
-            gap-[1rem] theme---tag p-5 text-[1rem] 
-            cursor-pointer"
+            className="flex text-center gap-[1rem] theme---tag p-5 text-[1rem] cursor-pointer"
           >Theme
             {theme ?
               <span

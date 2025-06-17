@@ -22,11 +22,9 @@ export default function TopNavigationBar() {
   }
   return (
     <>
-        <div className={`w-[100%] border border-sky-500 shadow-xl  flex justify-center items-center ${theme?"navigation-top--bar--tag--light":"navigation-top--bar--tag--dark "} `}>
-            <ul className='flex w-[63%] justify-between p-4 border border-slate-500'>
-                <li className={`
-                flex cursor-pointer gap-[0.5rem] flex-row justify-center items-center
-                `}                 
+        <div className={`w-[100%]  flex justify-start items-center ${theme?"navigation-top--bar--tag--light":"navigation-top--bar--tag--dark "} shadow-md `}>
+            <ul className='flex justify-between p-4 '>
+                <li className={`flex cursor-pointer gap-[0.5rem] flex-row justify-center items-center`}                 
                 onClick={handleOnClickLogo}>
                  
                    {/* <img 

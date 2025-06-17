@@ -1,0 +1,11 @@
+.main--tag--container--light{
+     background-color: rgb(255, 255, 255);
+     height: 100vh;
+  
+}
+
+.main--tag--container--dark{
+        background-color: rgb(31, 31, 31);
+        height: 100vh;
+
+}

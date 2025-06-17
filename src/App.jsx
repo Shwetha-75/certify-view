@@ -6,6 +6,7 @@ import { MenuStatus } from "./ContextAPI/MenuStatus";
 import { Status } from "./ContextAPI/Status";
 import { BrowserRouter } from "react-router";
 import Theme from "./ContextAPI/Theme";
+import MainComponentPage from "./MainComponentPage/MainComponentPage";
 const Container = styled.div`
    display:flex;
    flex-direction:column;
@@ -40,14 +41,14 @@ function App() {
 
 
   return (
-  <Container className={`${theme?"app--container--light":"app--container--dark"}`}
-  >
+  <Container className={`${theme?"app--container--light":"app--container--dark"}`}  >
     <BrowserRouter>
         <Theme.Provider value={{theme,setTheme}}>
         <MenuStatus.Provider value={{menuStatus,setMenuStatus}}>
           <Status.Provider value={{status,setStatus}}>
-            <TopNavigationBar />
-            <Main />
+            {/* <TopNavigationBar /> */}
+              {/* <Main /> */}
+              <MainComponentPage/>
           </Status.Provider>
         </MenuStatus.Provider>
         </Theme.Provider>
