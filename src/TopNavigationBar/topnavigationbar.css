@@ -1,58 +1,190 @@
-@media(max-width:480px){
-    
-    .title---logo---tag{
-         width:80px;
-         padding: 0;
-         height:50px;
-         margin:0;  
+@media(max-width:480px) {
+    .title---logo---tag--image {
+        width: 80px;
+        padding: 0;
+        height: 80px;
+        margin: 0;
+    }
+
+    .title---logo---tag {
+        font-size: 1rem;
+
+    }
+
+   
+}
+
+/* new phones in portrait  */
+@media(min-width:480px) and (max-width:768px) {
+    .title---logo---tag {
+        font-size: 1.2rem;
+       
+    }
+
+    .title---logo---tag--image {
+        width: 100px;
+        padding: 0;
+        height: 80px;
+        margin: 0;
+    }
+
+  
+
+    .navigation-top--bar--tag--light {
+        transition:1.3s;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 60px;
+        background-color: white;
+    }
+
+    .navigation-top--bar--tag--dark {
+        transition:1.3s;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 60px;
+        background-color: rgb(31, 31, 31);
     }
 }
-/* new phones in portrait  */
-@media(min-width:480px) and (max-width:768px){
-     .title---logo---tag{
-         width:100px;
-         padding: 0;
-         height:50px;
-         margin:0;  
-    }
-} 
 
 /* tabs portrait*/
-@media(min-width:768px) and (max-width:992px){
-     .title---logo---tag{
-         width:120px;
-         padding: 0;
-         height:50px;
-         margin:0; 
-    }  
+@media(min-width:768px) and (max-width:992px) {
+    .title---logo---tag--image {
+        width: 120px;
+        padding: 0;
+        height: 50px;
+        margin: 0;
+    }
+
+    .title---logo---tag {
+        font-family: 1.2rem;
+       
+    }
+
+
+
+    .navigation-top--bar--tag--light {
+        transition:1.3s;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 60px;
+      
+        background-color: white;
+    }
+
+    .navigation-top--bar--tag--dark {
+        transition:1.3s;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 60px;
+      
+        background-color: rgb(31, 31, 31);
+    }
 }
 
 /* tabs landscape */
-@media(min-width:992px) and (max-width:1200px){
-    .title---logo---tag{
-         width:120px;
-         padding: 0;
-         height:50px;
-         margin:0; 
+@media(min-width:992px) and (max-width:1200px) {
+    .title---logo---tag {
+        font-size: 1.3rem;
+       
+    }
+
+    .title---logo---tag--image {
+        width: 100px;
+        padding: 0;
+        height: 80px;
+        margin: 0;
+    }
+
+
+    .navigation-top--bar--tag--light {
+        transition:1.3s;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 60px;
+        background-color: white;
+    }
+
+    .navigation-top--bar--tag--dark {
+        transition:1.3s;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 60px;
+        background-color: rgb(31, 31, 31);
     }
 }
 
 /* laptop desktop */
-@media(min-width:1200px) and (max-width:1440px){
-  .title---logo---tag{
-         width:120px;
-         padding: 0;
-         height:50px;
-         margin:0; 
+@media(min-width:1200px) and (max-width:1440px) {
+   
+/* 
+    .title---logo---tag--image {
+        width: 100px;
+        padding: 0;
+        height: 80px;
+        margin: 0;
+    } */
+
+   
+     .title---logo---tag {
+        font-size:1.3rem;
+    }
+
+    .navigation-top--bar--tag--light {
+        transition:1.3s;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 60px;
+        background-color: white;
+    }
+
+    .navigation-top--bar--tag--dark {
+        transition:1.3s;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 60px;
+        background-color: rgb(31, 31, 31);
     }
 }
 
 /* large desktop */
-@media(min-width:1440px){
-  .title---logo---tag{
-         width:120px;
-         padding: 0;
-         height:50px;
-         margin:0; 
+@media(min-width:1440px) {
+    .title---logo---tag--image {
+        width: 100px;
+        padding: 0;
+        height: 80px;
+        margin: 0;
+    }
+
+    .title---logo---tag {
+        font-size: 1.4rem;
+        
+    }
+
+  
+    .navigation-top--bar--tag--light {
+        transition:1.3s;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 60px;
+        background-color: white;
+    }
+
+    .navigation-top--bar--tag--dark {
+        transition:1.3s;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 60px;
+        background-color: rgb(31, 31, 31);
     }
 }

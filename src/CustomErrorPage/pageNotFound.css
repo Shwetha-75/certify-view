@@ -1,14 +1,197 @@
-.page--not--found--tag--light{
-    color:black;
-    position:absolute;
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height:100vh;
+@media(max-width:480px) {
+    .page--not--found--tag--light {
+        color: black;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .input--tag--div{
+        border:2px solid slategray;
+        border-radius:10px;
+        align-items:center;
+        outline:none;
+    }
+
+    .page--not--found--tag {
+        color: white;
+        position: absolute;
+        background-color: rgb(31, 31, 31);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
-.page--not--found--tag{
-    color:white;
-     position:absolute;
-    background-color: black;
-    width: 100%;
-    height:100vh;
+
+/* new phones in portrait  */
+@media(min-width:480px) and (max-width:767px) {
+    .page--not--found--tag--light {
+        color: black;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .input--tag--div{
+        border:2px solid slategray;
+        border-radius:10px;
+        align-items:center;
+        outline:none;
+    }
+
+    .page--not--found--tag {
+        color: white;
+        position: absolute;
+        background-color: rgb(31, 31, 31);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* tabs portrait*/
+@media(min-width:768px) and (max-width:991px) {
+    .page--not--found--tag--light {
+        color: black;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .input--tag--div{
+        border:2px solid slategray;
+        border-radius:10px;
+        align-items:center;
+        outline:none;
+    }
+
+    .page--not--found--tag {
+        color: white;
+        position: absolute;
+        background-color: rgb(31, 31, 31);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* tabs landscape */
+@media(min-width:992px) and (max-width:1199px) {
+    .page--not--found--tag--light {
+        color: black;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .input--tag--div{
+        border:2px solid slategray;
+        border-radius:10px;
+        align-items:center;
+        outline:none;
+    }
+
+    .page--not--found--tag {
+        color: white;
+        position: absolute;
+        background-color: rgb(31, 31, 31);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* laptop desktop */
+@media(min-width:1200px) and (max-width:1439px) {
+    .page--not--found--tag--light {
+        color: black;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .input--tag--div{
+        border:2px solid slategray;
+        border-radius:10px;
+        align-items:center;
+        outline:none;
+    }
+
+    .page--not--found--tag {
+        color: white;
+        position: absolute;
+        background-color: rgb(31, 31, 31);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* large desktop */
+@media(min-width:1440px) {
+
+    .page--not--found--tag--light {
+        color: black;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .input--tag--div{
+        border:2px solid slategray;
+        border-radius:10px;
+        align-items:center;
+        outline:none;
+    }
+
+    .page--not--found--tag {
+        color: white;
+        position: absolute;
+        background-color: rgb(31, 31, 31);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

@@ -1,125 +1,73 @@
 /* ----------Flip -flop----------- */
-
-
-
 /* older phones */
 @media(max-width:480px) {
    .navigation--bar--tag {
       transition: 1.3s;
-      position: absolute;
+      position: fixed;
       top: 10;
       background-color: rgba(11, 11, 11, 0.72);
-      right: 0;
+      left: 0;
       backdrop-filter: blur(20px);
-      height: 100vh;
-      width: 0px;
+      height: 100%;
+      width: 60px;
       white-space: nowrap;
       border: none;
+      z-index: 999;
       /* border-left:4px solid transparent;; */
+   }
+
+   .div--tag--side--menu--bar {
+      position: absolute;
+      left: 60px;
+      top:0px;
    }
 
    .navigation--bar--tag--active {
       transition: 1.3s;
       background-color: rgba(11, 11, 11, 0.72);
-      height: 100vh;
+      height: 100%;
       width: 60%;
       white-space: nowrap;
       backdrop-filter: blur(20px);
       color: rgb(196, 195, 195);
-      right: 0;
+      left: 0;
       z-index: 999;
-      position: absolute;
+      position: fixed;
       border: none;
       /* border-left:4px solid transparent;; */
    }
 
    .navigation--bar--tag--light {
       transition: 1.3s;
-      position: absolute;
+      position: fixed;
       top: 10;
       background-color: white;
       color: darkgray;
-      right: 0;
+      left: 0;
       backdrop-filter: blur(20px);
-      height: 100vh;
-      width: 0px;
+      height: 100%;
+      width: 60px;
       white-space: nowrap;
-
+      z-index: 999;
    }
 
    .navigation--bar--tag--active--light {
       transition: 1.3s;
       background-color: white;
-      color: rgb(47, 47, 47);
+      color: rgb(114, 114, 114);
+
       border: none;
       /* border-left:4px solid transparent;; */
-      height: 100vh;
+      height: 100%;
       width: 60%;
       white-space: nowrap;
       backdrop-filter: blur(20px);
-      right: 0;
+      left: 0;
       z-index: 999;
-      position: absolute;
+      position: fixed;
 
    }
 
-   .div--tag--side--menu--bar {
-      top: 10px;
-   }
-
-   .navigation--bar--each--item--1 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-      transition: 0.9s;
-   }
-
-   .navigation--bar--each--item--2 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-      transition: 0.9s;
-   }
-
-   .navigation--bar--each--item--3 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-
-      transition: 0.9s;
-   }
-
-   .navigation--bar--each--item--4 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-      transition: 0.9s;
-   }
-
-   /* ----------------------------- */
-
-   .navigation--bar--each--light--item--1 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-   }
-
-   .navigation--bar--each--light--item--2 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-
-   }
-
-   .navigation--bar--each--light--item--3 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-
-   }
-
-   .navigation--bar--each--light--item--4 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-
-   }
 
    .close--button--tag {
       transition: 0.9s;
@@ -141,27 +89,35 @@
 
 /* new phones in portrait  */
 @media(min-width:480px) and (max-width:768px) {
+   
    .title---logo---tag {
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-weight: bold;
+       font-family: 'Noto-Serif', serif,
    }
 
-   .title---logo---tag--light {
-      font-size: 1.5rem;
-      color: black;
-      font-weight: bold;
+ 
+
+   .div--tag--side--menu--bar {
+      position: absolute;
+      width:100%;
+      top:100px;
+      padding:10px;
    }
+
 
    .navigation--bar--tag {
       transition: 1.3s;
-      position: absolute;
+      position: fixed;
       top: 10;
       background-color: rgba(11, 11, 11, 0.72);
-      right: 0;
+      left: 0;
       backdrop-filter: blur(20px);
-      height: 100vh;
-      width: 0px;
+      height: 100%;
+      width: 60px;
       border: none;
+      z-index: 999;
+
       /* border-left:4px solid transparent;; */
       white-space: nowrap;
    }
@@ -169,28 +125,32 @@
    .navigation--bar--tag--active {
       transition: 1.3s;
       background-color: rgba(11, 11, 11, 0.72);
-      height: 100vh;
-      width: 40%;
+      height: 100%;
+      width: 60%;
       white-space: nowrap;
       backdrop-filter: blur(20px);
       color: rgb(196, 195, 195);
-      right: 0;
-      position: absolute;
+      left: 0;
+      position: fixed;
       border: none;
+      z-index: 999;
+
       /* border-left:4px solid transparent;; */
    }
 
    .navigation--bar--tag--light {
       transition: 1.3s;
-      position: absolute;
+      position: fixed;
       top: 10;
       background-color: white;
       color: darkgray;
-      right: 0;
+      left: 0;
       backdrop-filter: blur(20px);
-      height: 100vh;
-      width: 0px;
+      height: 100%;
+      width: 60px;
       border: none;
+      z-index: 999;
+
       /* border-left:4px solid transparent;; */
       white-space: nowrap;
    }
@@ -198,78 +158,26 @@
    .navigation--bar--tag--active--light {
       transition: 1.3s;
       background-color: white;
-      height: 100vh;
-      width: 40%;
-      color: rgb(47, 47, 47);
+      height: 100%;
+      width: 60%;
+      color: rgb(114, 114, 114);
+      
+      z-index: 999;
+
       border: none;
       /* border-left:4px solid transparent;; */
       white-space: nowrap;
       backdrop-filter: blur(20px);
-      right: 0;
-      position: absolute;
+      left: 0;
+      position: fixed;
    }
 
-   .div--tag--side--menu--bar {
 
-      top: 10px;
+.navigation--bar--tag--side{
 
-   }
-
-   .navigation--bar--each--item--1 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-
-      transition: 0.9s;
-   }
-
-   .navigation--bar--each--item--2 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-
-      transition: 0.9s;
-   }
-
-   .navigation--bar--each--item--3 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-
-      transition: 0.9s;
-   }
-
-   .navigation--bar--each--item--4 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-      transition: 0.9s;
-   }
-
-   /* ----------------- */
-
-
-   .navigation--bar--each--light--item--1 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-   }
-
-   .navigation--bar--each--light--item--2 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-
-   }
-
-   .navigation--bar--each--light--item--3 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-
-   }
-
-   .navigation--bar--each--light--item--4 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-
+    
+      padding:20px;
+      width:60%;
    }
 
    .close--button--tag {
@@ -291,28 +199,42 @@
 /* tabs portrait*/
 @media(min-width:768px) and (max-width:992px) {
    .title---logo---tag {
-      font-size: 1.7rem;
+      font-size: 1rem;
       font-weight: bold;
+       font-family: 'Noto-Serif', serif,
    }
 
-   .title---logo---tag--light {
-      font-size: 1.7rem;
-      color: black;
-      font-weight: bold;
+   .div--tag--side--menu--bar {
+      position: absolute;
+      width:100%;
+      top:100px;
+      padding:10px;
+   }
+
+
+  
+      .navigation--bar---overlay--display {
+      background-color: rgba(5, 9, 76, 0.675);
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+      height: 100%;
+      backdrop-filter: blur(20px);
    }
 
    .navigation--bar--tag {
       transition: 1.3s;
-      position: absolute;
+      position: fixed;
       top: 10;
       background-color: rgba(11, 11, 11, 0.72);
-      right: 0;
+      left: 0;
       backdrop-filter: blur(20px);
-      height: 100vh;
-      width: 0px;
-      ;
+      height: 100%;
+      width: 60px;
       white-space: nowrap;
       border: none;
+      z-index: 999;
+
       /* border-left:4px solid transparent;; */
    }
 
@@ -328,23 +250,26 @@
       ; */
       color: rgb(196, 195, 195);
       backdrop-filter: blur(20px);
-      right: 0;
-      position: absolute;
+      left: 0;
+      position: fixed;
+      z-index: 999;
+
    }
 
    .navigation--bar--tag--light {
       transition: 1.3s;
-      position: absolute;
+      position: fixed;
       top: 10;
       background-color: white;
       color: darkgray;
-      right: 0;
+      left: 0;
       backdrop-filter: blur(20px);
-      height: 100vh;
-      width: 0px;
-      ;
+      height: 100%;
+      width: 60px;
       white-space: nowrap;
       border: none;
+      z-index: 999;
+
       /* border-left:4px solid transparent;; */
    }
 
@@ -354,72 +279,22 @@
       height: 100%;
       width: 40%;
       white-space: nowrap;
-      color: rgb(47, 47, 47);
+      color: rgb(114, 114, 114);
       border: none;
       /* border-left:4px solid transparent;; */
       backdrop-filter: blur(20px);
-      right: 0;
-      position: absolute;
-   }
-
-   .div--tag--side--menu--bar {
-      top: 10px;
-   }
-
-   .navigation--bar--each--item--1 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-
-      transition: 0.9s;
-   }
-
-   .navigation--bar--each--item--2 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-
-      transition: 0.9s;
-   }
-
-   .navigation--bar--each--item--3 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-
-      transition: 0.9s;
-   }
-
-   .navigation--bar--each--item--4 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-      transition: 0.9s;
-   }
-
-
-   .navigation--bar--each--light--item--1 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-   }
-
-   .navigation--bar--each--light--item--2 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
+      left: 0;
+      position: fixed;
+      z-index: 999;
 
    }
+.navigation--bar--tag--side{
 
-   .navigation--bar--each--light--item--3 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-
+    
+      padding:20px;
+      width:60%;
    }
 
-   .navigation--bar--each--light--item--4 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-
-   }
 
    .close--button--tag {
       transition: 0.9s;
@@ -440,15 +315,20 @@
 /* tabs landscape */
 @media(min-width:992px) and (max-width:1200px) {
    .title---logo---tag {
-      font-size: 2rem;
+      font-size: 1.2rem;
       font-weight: bold;
+       font-family: 'Noto-Serif', serif,
    }
 
-   .title---logo---tag--light {
-      font-size: 2rem;
-      color: black;
-      font-weight: bold;
+   
+
+   .div--tag--side--menu--bar {
+      position: absolute;
+      width:100%;
+      top:100px;
+      padding:10px;
    }
+
 
    .navigation--bar---overlay--display {
       background-color: rgba(5, 9, 76, 0.675);
@@ -461,124 +341,71 @@
 
    .navigation--bar--tag {
       transition: 0.9s;
-      position: absolute;
+      position: fixed;
       top: 10;
       background-color: rgba(11, 11, 11, 0.72);
-      right: 0;
+      left: 0;
       backdrop-filter: blur(20px);
-      height: 100vh;
-      width: 0px;
+      height: 100%;
+      width: 60px;
       white-space: nowrap;
       border: none;
+      z-index: 999;
+
       /* border-left:4px solid transparent;; */
    }
 
    .navigation--bar--tag--active {
       transition: 0.9s;
       background-color: rgba(11, 11, 11, 0.72);
-      height: 100vh;
+      height: 100%;
       width: 30%;
       white-space: nowrap;
       border: none;
       /* border-left:4px solid transparent;; */
       color: rgb(196, 195, 195);
       backdrop-filter: blur(20px);
-      right: 0;
-      z-index: 10;
-      position: absolute;
+      left: 0;
+      position: fixed;
+      z-index: 999;
    }
 
    .navigation--bar--tag--light {
       transition: 0.9s;
-      position: absolute;
+      position: fixed;
       top: 10;
       background-color: white;
-      right: 0;
+      left: 0;
       backdrop-filter: blur(20px);
-      height: 100vh;
-      width: 0px;
+      height: 100%;
+      width: 60px;
       white-space: nowrap;
       border: none;
+      z-index: 999;
       /* border-left:4px solid transparent;; */
    }
 
    .navigation--bar--tag--active--light {
       transition: 0.9s;
       background-color: white;
-      height: 100vh;
+      height: 100%;
       width: 30%;
       white-space: nowrap;
-      color: rgb(47, 47, 47);
+      color: rgb(114, 114, 114);
       border: none;
       /* border-left:4px solid transparent;; */
       backdrop-filter: blur(20px);
-      right: 0;
-      z-index: 10;
-      position: absolute;
+      left: 0;
+      position: fixed;
+      z-index: 999;
    }
 
-   .div--tag--side--menu--bar {
+.navigation--bar--tag--side{
 
-      top: 10px;
-
+    
+      padding:20px;
+      width:60%;
    }
-
-   .navigation--bar--each--item--1 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-
-      transition: 0.9s;
-   }
-
-   .navigation--bar--each--item--2 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-
-      transition: 0.9s;
-   }
-
-   .navigation--bar--each--item--3 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-
-      transition: 0.9s;
-   }
-
-   .navigation--bar--each--item--4 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-      transition: 0.9s;
-   }
-
-   /* -------- */
-
-   .navigation--bar--each--light--item--1 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-   }
-
-   .navigation--bar--each--light--item--2 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-
-   }
-
-   .navigation--bar--each--light--item--3 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-
-   }
-
-   .navigation--bar--each--light--item--4 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-
-   }
-
    .close--button--tag {
       transition: 0.9s;
       color: rgb(226, 40, 40);
@@ -597,137 +424,97 @@
 
 /* laptop desktop */
 @media(min-width:1200px) and (max-width:1440px) {
-   .title---logo---tag {
-      font-size: 2.2rem;
-      font-weight: bold;
+  
+
+   .div--tag--side--menu--bar {
+      position: absolute;
+      width:100%;
+      top:100px;
+      padding:10px;
    }
 
-   .title---logo---tag--light {
-      font-size: 2.2rem;
-      color: black;
-      font-weight: bold;
+
+   .title---logo---tag {
+      font-size: 1.3rem;
+    
+       font-family: 'Noto-Serif', serif,
    }
 
    .navigation--bar--tag {
       transition: 1.3s;
-      position: absolute;
+      position: fixed;
       top: 10;
       background-color: rgba(11, 11, 11, 0.72);
-      right: 0;
+      left: 0;
       backdrop-filter: blur(20px);
-      height: 100vh;
-      width: 0px;
+      height: 100%;
+      width:60px;
       ;
+      border:none;
       white-space: nowrap;
-      border: none;
+      z-index: 999;
+
       /* border-left:4px solid transparent;; */
    }
 
    .navigation--bar--tag--active {
       transition: 1.3s;
       background-color: rgba(11, 11, 11, 0.72);
-      height: 100vh;
-      width: 20%;
+      height: 100%;
+      width: 25%;
       white-space: nowrap;
       color: rgb(196, 195, 195);
       border: none;
       /* border-left:4px solid transparent;; */
       backdrop-filter: blur(20px);
-      right: 0;
-      position: absolute;
+      left: 0;
+      position: fixed;
+      z-index: 999;
+
    }
 
    .navigation--bar--tag--light {
       transition: 1.3s;
-      position: absolute;
+      position: fixed;
       top: 10;
       background-color: white;
       color: darkgray;
-      right: 0;
+      left: 0;
       backdrop-filter: blur(20px);
-      height: 100vh;
-      width: 0px;
+      height: 100%;
+      width:60px;
       ;
       white-space: nowrap;
       border: none;
+      z-index: 999;
+
       /* border-left:4px solid transparent;; */
    }
+.navigation--bar--tag--side{
 
+    
+      padding:20px;
+      width:60%;
+   }
    .navigation--bar--tag--active--light {
       transition: 1.3s;
       background-color: rgb(255, 255, 255);
-      height: 100vh;
-      width: 20%;
+      height: 100%;
+      width: 25%;
       white-space: nowrap;
-      color: rgb(47, 47, 47);
+      color: rgb(114, 114, 114);
+
       border: none;
       /* border-left:4px solid transparent;; */
       backdrop-filter: blur(20px);
-      right: 0;
-      position: absolute;
-   }
-
-   .div--tag--side--menu--bar {
-
-      top: 10px;
+      left: 0;
+      position: fixed;
+      z-index: 999;
 
    }
 
-   .navigation--bar--each--item--1 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
 
-      transition: 0.9s;
-   }
-
-   .navigation--bar--each--item--2 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-
-      transition: 0.9s;
-   }
-
-   .navigation--bar--each--item--3 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-
-      transition: 0.9s;
-   }
-
-   .navigation--bar--each--item--4 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-      transition: 0.9s;
-   }
-
-   /* --------------------------- */
-
-   .navigation--bar--each--light--item--1 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-   }
-
-   .navigation--bar--each--light--item--2 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-
-   }
-
-   .navigation--bar--each--light--item--3 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-
-   }
-
-   .navigation--bar--each--light--item--4 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-
-   }
+ 
 
    .close--button--tag {
       transition: 0.9s;
@@ -747,140 +534,102 @@
 
 /* large desktop */
 @media(min-width:1440px) {
-   .title---logo---tag {
-      font-size: 2.4rem;
+   .title---logo---tag--light {
+      font-size: 1.4rem;
       font-weight: bold;
+       font-family: 'Noto-Serif', serif;
    }
 
-   .title---logo---tag--light {
-      font-size: 2.4rem;
+   .title---logo---tag--dark {
+      font-size: 1.4rem;
       color: black;
       font-weight: bold;
+       font-family: 'Noto-Serif', serif;
+   }
+
+   .div--tag--side--menu--bar {
+      position: absolute;
+      width:100%;
+      top:100px;
+      padding:10px;
    }
 
    .navigation--bar--tag {
-      transition: 1.3s;
-      position: absolute;
+      transition: 1.3s; 
+      position: fixed;
       top: 10;
-      background-color: rgba(11, 11, 11, 0.72);
-      right: 0;
+      /* background-color: rgba(11, 11, 11, 0.72); */
+      left: 0;
       backdrop-filter: blur(20px);
-      height: 100vh;
-      width: 0px;
-      ;
+      height: 100%;
+      width: 60px;
+      z-index: 999;
       white-space: nowrap;
       border: none;
+    
       /* border-left:4px solid transparent;; */
    }
+   .navigation--bar--tag--side{
 
+    
+      padding:20px;
+      width:60%;
+   }
    .navigation--bar--tag--active {
-      transition: 1.3s;
-      background-color: rgba(11, 11, 11, 0.72);
-      height: 100vh;
+      transition: 1.3s;    
+      /* background-color: rgba(11, 11, 11, 0.72); */
+      height: 100%;
       width: 18%;
       white-space: nowrap;
       color: rgb(196, 195, 195);
-      /* border-left: 3px solid rgba(27, 27, 27, 0.997);; */
+      border-left: 3px solid rgba(27, 27, 27, 0.997);;
       backdrop-filter: blur(20px);
-      right: 0;
-      position: absolute;
+      left: 0;
+      position: fixed;
       border: none;
+      z-index: 999;
+   
+
       /* border-left:4px solid transparent;; */
    }
 
    .navigation--bar--tag--light {
-      transition: 1.3s;
-      position: absolute;
+      transition: 1.3s; 
+      position: fixed;
       top: 10;
-      background-color: white;
-      color: darkgray;
-      right: 0;
+      /* background-color: white; */
+      color: rgb(114, 114, 114);
+      left: 0;
       backdrop-filter: blur(20px);
-      height: 100vh;
-      width: 0px;
+      height: 100%;
+      width: 60px;
       ;
       white-space: nowrap;
       border: none;
+      z-index: 999;
+
       /* border-left:4px solid transparent;; */
    }
 
    .navigation--bar--tag--active--light {
-      transition: 1.3s;
-      background-color: white;
-      height: 100vh;
-      width: 18%;
+      transition: 1.3s; 
+      /* background-color: white; */
+      height: 100%;
+      width: 18% ;
       white-space: nowrap;
-      color: rgb(47, 47, 47);
+      color: rgb(114, 114, 114);
       /* border-left: 3px solid rgba(169, 169, 169, 0.256);; */
       backdrop-filter: blur(20px);
-      right: 0;
-      position: absolute;
+      left: 0;
+      position: fixed;
       border: none;
+      z-index: 999;
+
       /* border-left:4px solid transparent;; */
    }
 
-   .div--tag--side--menu--bar {
 
-      top: 10px;
-
-   }
-
-   .navigation--bar--each--item--1 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-
-      transition: 0.9s;
-   }
-
-   .navigation--bar--each--item--2 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-
-      transition: 0.9s;
-   }
-
-   .navigation--bar--each--item--3 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-
-      transition: 0.9s;
-   }
-
-   .navigation--bar--each--item--4 {
-      color: rgb(255, 255, 255);
-      background-color: rgba(24, 24, 24, 0.286);
-      transition: 0.9s;
-   }
-
-   /* -------------------------- */
-
-   .navigation--bar--each--light--item--1 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-   }
-
-   .navigation--bar--each--light--item--2 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-
-   }
-
-   .navigation--bar--each--light--item--3 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-
-   }
-
-   .navigation--bar--each--light--item--4 {
-      color: black;
-      transition: 0.9s;
-      background-color: rgba(223, 223, 223, 0.444);
-
-   }
-
+ 
    .close--button--tag {
       transition: 0.9s;
       color: rgb(226, 40, 40);
@@ -896,3 +645,88 @@
       font-size: 2rem;
    }
 }
+
+  .navigation--bar--each--item--1 {
+      color: rgb(255, 255, 255);
+      /* transition: 0.9s; */
+      background-color:rgba(58, 57, 57, 0.591);
+    border-radius:100px;
+    width:100%;
+   }
+
+   .navigation--bar--each--item--2 {
+      color: rgb(255, 255, 255);
+      /* transition: 0.9s; */
+      background-color:rgba(58, 57, 57, 0.591);
+    border-radius:100px;
+    width:100%;
+   }
+
+   .navigation--bar--each--item--3 {
+      color: rgb(255, 255, 255);
+      /* transition: 0.9s; */
+      background-color:rgba(58, 57, 57, 0.591);
+    border-radius:100px;
+    width:100%;
+   }
+
+   .navigation--bar--each--item--4 {
+      color: rgb(255, 255, 255);
+      /* transition: 0.9s; */
+      background-color:rgba(58, 57, 57, 0.591);
+    border-radius:100px;
+    width:100%;
+   }
+
+   /* --------------------------- */
+
+   .navigation--bar--each--light--item--1 {
+      color: black;
+      /* transition: 0.9s; */
+      background-color:rgba(202, 217, 237, 0.571);
+
+    border-radius:100px;
+      width:100%;
+   }
+
+   .navigation--bar--each--light--item--2 {
+      color: black;
+      /* transition: 0.9s; */
+      background-color:rgba(202, 217, 237, 0.571);
+
+    border-radius:100px;
+      width:100%;
+   }
+
+   .navigation--bar--each--light--item--3 {
+      color: black;
+      /* transition: 0.9s; */
+      background-color:rgba(202, 217, 237, 0.571);
+
+    border-radius:100px;
+      width:100%;
+   }
+
+   .navigation--bar--each--light--item--4 {
+      color: black;
+      /* transition: 0.9s; */
+      background-color:rgba(202, 217, 237, 0.571);
+
+    border-radius:100px;
+      width:100%;
+   }
+
+      .navigation--bar--each--light--item--{
+      color: rgb(154, 154, 154);
+      /* transition: 0.9s; */
+      /* border-bottom:2px solid transparent; */
+
+      width:100%;
+   }
+ .navigation--bar--each--item--{
+    color: rgba(171, 171, 171, 0.9);
+      /* transition: 0.9s; */
+      /* border-bottom:2px solid transparent; */
+
+      width:100%;
+   }
