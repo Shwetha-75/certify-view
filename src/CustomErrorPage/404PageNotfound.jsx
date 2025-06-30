@@ -1,8 +1,7 @@
 import React from 'react'
 import Theme from "../ContextAPI/Theme";
 import "./pageNotFound.css"
-// import ErrorPage from "../media/ErrorPage.png";
-// import ErrorPageDark from "../media/ErrorPageDark.png"
+
 
 export default function PageNotfound() {
   const {theme} = React.useContext(Theme);
