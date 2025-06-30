@@ -10,10 +10,16 @@ input:-webkit-autofill:active{
      -webkit-text-fill-color: rgb(188, 235, 254);  
      -webkit-box-shadow: 0 0 0 40px transparent inset !important;
 }
+
+
 .app--container--light{
+  transition: 1.3s;
+  width: 100%;
    background-color:white ;
 }
 .app--container--dark{
+  transition: 1.3s;
+  width: 100%;
   background-color: rgb(31, 31, 31);
 }
 *{
@@ -97,8 +103,3 @@ html::-webkit-scrollbar-thumb{
 }
 
 /* large desktop */
-@media(min-width:1440px){
-  .hamburger--symbol--tag{
-    font-size: 3rem;
-  }
-}

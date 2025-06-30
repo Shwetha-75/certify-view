@@ -1,10 +1,10 @@
 const data = [
-   {
+   
+    {
       id:1,
       data:'Home',
-      path:"/"
-   },
-    
+      path:'/'
+    },
     {
         id:2,
         data:'Send Email',
@@ -13,7 +13,7 @@ const data = [
     {
         id:3,
         data:'Upload Excel',
-        path:'uploadexcel'
+        path:'/uploadexcel'
     },
    {
       id:4,

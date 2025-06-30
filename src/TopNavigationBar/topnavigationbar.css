@@ -8,35 +8,17 @@
 
     .title---logo---tag {
         font-size: 1rem;
-        padding: 0;
-        font-family: 'Noto-Serif', serif;
-        color: black;
-        margin: 0;
-        font-weight: bold;
-        font-style: italic;
+
     }
 
-    .title---logo---tag--dark {
-        font-size: 1rem;
-        padding: 0;
-        font-family: 'Noto-Serif', serif;
-        margin: 0;
-        color: rgb(225, 225, 225);
-        font-weight: bold;
-        font-style: italic;
-    }
+   
 }
 
 /* new phones in portrait  */
 @media(min-width:480px) and (max-width:768px) {
     .title---logo---tag {
         font-size: 1.2rem;
-        padding: 0;
-        font-family: 'Noto-Serif', serif;
-        margin: 0;
-        color: black;
-        font-weight: bold;
-        font-style: italic;
+       
     }
 
     .title---logo---tag--image {
@@ -46,14 +28,24 @@
         margin: 0;
     }
 
-    .title---logo---tag--dark {
-        font-size: 1.2rem;
-        padding: 0;
-        font-family: 'Noto-Serif', serif;
-        margin: 0;
-        color: rgb(225, 225, 225);
-        font-weight: bold;
-        font-style: italic;
+  
+
+    .navigation-top--bar--tag--light {
+        transition:1.3s;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 60px;
+        background-color: white;
+    }
+
+    .navigation-top--bar--tag--dark {
+        transition:1.3s;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 60px;
+        background-color: rgb(31, 31, 31);
     }
 }
 
@@ -68,22 +60,29 @@
 
     .title---logo---tag {
         font-family: 1.2rem;
-        padding: 0;
-        font-family: 'Noto-Serif', serif;
-        margin: 0;
-        color: black;
-        font-weight: bold;
-        font-style: italic;
+       
     }
 
-    .title---logo---tag--dark {
-        font-family: 1.2rem;
-        padding: 0;
-        font-family: 'Noto-Serif', serif;
-        margin: 0;
-        color: rgb(225, 225, 225);
-        font-weight: bold;
-        font-style: italic;
+
+
+    .navigation-top--bar--tag--light {
+        transition:1.3s;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 60px;
+      
+        background-color: white;
+    }
+
+    .navigation-top--bar--tag--dark {
+        transition:1.3s;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 60px;
+      
+        background-color: rgb(31, 31, 31);
     }
 }
 
@@ -91,12 +90,7 @@
 @media(min-width:992px) and (max-width:1200px) {
     .title---logo---tag {
         font-size: 1.3rem;
-        padding: 0;
-        font-family: 'Noto-Serif', serif;
-        margin: 0;
-        color: black;
-        font-weight: bold;
-        font-style: italic;
+       
     }
 
     .title---logo---tag--image {
@@ -106,44 +100,58 @@
         margin: 0;
     }
 
-    .title---logo---tag--dark {
-        font-size: 1.3rem;
-        padding: 0;
-        font-family: 'Noto-Serif', serif;
-        margin: 0;
-        color: rgb(225, 225, 225);
-        font-weight: bold;
-        font-style: italic;
+
+    .navigation-top--bar--tag--light {
+        transition:1.3s;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 60px;
+        background-color: white;
+    }
+
+    .navigation-top--bar--tag--dark {
+        transition:1.3s;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 60px;
+        background-color: rgb(31, 31, 31);
     }
 }
 
 /* laptop desktop */
 @media(min-width:1200px) and (max-width:1440px) {
-    .title---logo---tag {
-        font-size: 1.4rem;
-        padding: 0;
-        font-family: 'Noto-Serif', serif;
-        margin: 0;
-        color: black;
-        font-weight: bold;
-        font-style: italic;
-    }
-
+   
+/* 
     .title---logo---tag--image {
         width: 100px;
         padding: 0;
         height: 80px;
         margin: 0;
+    } */
+
+   
+     .title---logo---tag {
+        font-size:1.3rem;
     }
 
-    .title---logo---tag--dark {
-        font-size: 1.4rem;
-        padding: 0;
-        font-family: 'Noto-Serif', serif;
-        margin: 0;
-        color: rgb(225, 225, 225);
-        font-weight: bold;
-        font-style: italic;
+    .navigation-top--bar--tag--light {
+        transition:1.3s;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 60px;
+        background-color: white;
+    }
+
+    .navigation-top--bar--tag--dark {
+        transition:1.3s;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 60px;
+        background-color: rgb(31, 31, 31);
     }
 }
 
@@ -158,34 +166,25 @@
 
     .title---logo---tag {
         font-size: 1.4rem;
-        padding: 0;
-        font-family: 'Noto-Serif', serif;
-        margin: 0;
-        color: black;
-        font-weight: bold;
-        font-style: italic;
+        
     }
 
-    .title---logo---tag--dark {
-        font-size: 1.4rem;
-        padding: 0;
-        font-family: 'Noto-Serif', serif;
-        margin: 0;
-        color: rgb(225, 225, 225);
-        font-weight: bold;
-        font-style: italic;
+  
+    .navigation-top--bar--tag--light {
+        transition:1.3s;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 60px;
+        background-color: white;
     }
-}
-.navigation-top--bar--tag--light{
-    position:fixed;
-    z-index:999;
-    top:0;
-    background-color: white;
-}
 
-.navigation-top--bar--tag--dark{
-    position:fixed;
-    z-index:999;
-    top:0;
-    background-color: rgb(31, 31, 31);
+    .navigation-top--bar--tag--dark {
+        transition:1.3s;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 60px;
+        background-color: rgb(31, 31, 31);
+    }
 }

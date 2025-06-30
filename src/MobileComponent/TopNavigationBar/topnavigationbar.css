@@ -1,0 +1,23 @@
+.title---logo---tag--mobile{
+    color:black;
+    font-weight: bold ;
+    font-size: 1rem;
+    /* font-style: italic; */
+    font-family: 'Noto-Serif', serif;
+
+}
+.title---logo---tag--mobile--dark{
+    color:rgb(255, 255, 255);
+    font-weight: bold ;
+    /* font-style: italic; */
+    font-size: 1rem;
+    font-family: 'Noto-Serif', serif;
+
+}
+
+.top--navigation--bar--tag--dark{
+  background-color:rgb(31, 31, 31);
+}
+.top--navigation--bar--tag{
+  background-color:rgb(255, 255, 255);
+}

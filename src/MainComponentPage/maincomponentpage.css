@@ -1,11 +1,13 @@
 .main--tag--container--light{
+        transition:1.3s;
      background-color: rgb(255, 255, 255);
-     height: 100vh;
+     width:100%;
   
 }
 
 .main--tag--container--dark{
+        transition:1.3s;
         background-color: rgb(31, 31, 31);
-        height: 100vh;
+       width:100%;
 
 }
