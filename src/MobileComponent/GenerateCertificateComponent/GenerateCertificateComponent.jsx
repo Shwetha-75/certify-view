@@ -1,7 +1,7 @@
 import React from 'react'
 import {MenuStatus} from "../../ContextAPI/MenuStatus";
 
-export default function SendMail() {
+export default function GenerateCertificateComponent() {
   const menuRefUpload=React.useRef(null);
   const {setMenuStatus}=React.useContext(MenuStatus)
   React.useEffect(()=>{

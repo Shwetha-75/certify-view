@@ -1,11 +1,10 @@
 const data = [
-   
-    {
+   {
       id:1,
       data:'Home',
-      path:'/'
-    },
-        
+      path:"/"
+   },
+    
     {
         id:2,
         data:'Select Template',
@@ -23,10 +22,9 @@ const data = [
    },
    {
       id:5,
-      data:'Send Mail',
-      path:'/send-mail'
+      data:'Send Email',
+      path:'/send-email'
    }
-   
    
 ]
 

@@ -1,14 +1,11 @@
 import React from "react"
-import Main from "./MainComponent/Main"
-import TopNavigationBar from "./TopNavigationBar/TopNavigationBar";
-import WindowResizeProvider from "./ContextAPI/WindowResizeProvider";
 import WindowResize from "./ContextAPI/WindowResize"
 import styled from 'styled-components'
 import { MenuStatus } from "./ContextAPI/MenuStatus";
 import { Status } from "./ContextAPI/Status";
 import { BrowserRouter } from "react-router";
 import Theme from "./ContextAPI/Theme";
-import MainComponentPage from "./MainComponentPage/MainComponentPage";
+import MainComponentPage from "./MainComponentLargerDevices/MainDashBoardComponent/MainComponentPage/MainComponentPage";
 import MainMobile from "./MobileComponent/Main"
 const Container = styled.div`
    display:flex;

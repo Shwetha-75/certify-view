@@ -2,12 +2,16 @@ import React from 'react'
 import { Routes,Route } from 'react-router';
 import TopNavigationBar from "./TopNavigationBar/TopNavigationBar"
 import Theme from '../ContextAPI/Theme';
-import EmailTemplate from './EmailTemplateComponent/EmailTemplate';
 import MainComponent from "./MainComponent/MainComponent";
 import NavigationBarMobile from './NavigationBarMobile/NavigationBarMobile';
 import MenuRefProvider from './ProviderComponent/MenuRefProvider';
 import { MenuStatus } from '../ContextAPI/MenuStatus';
-import UploadExcelComponent from './UploadExcelComponent/UploadExcelComponent';
+import SelectTemplate from './SelectTemplateComponent/SelectTemplate';
+import ViewCertificate from "./ViewCertificateComponent/ViewCertificate";
+import GenerateCertificate from './GenerateCertificateComponent/GenerateCertificateComponent';
+import SendMail from "./SendMailComponent/SendMail";
+
+
 export default function Main() {
   const {theme,
     // setTheme
@@ -44,15 +48,18 @@ export default function Main() {
 
   
   return (
-    <MenuRefProvider>
+    // <MenuRefProvider>
+    <>
 
     <div 
     style={
       theme?{
         backgroundColor:'white',
+        transition:'1.3s',
         height:'100vh'
     }:{
       backgroundColor:'rgb(31,31,31)',
+      transition:'1.3s',
       height:'100vh'
     }}
     
@@ -65,13 +72,15 @@ export default function Main() {
     onClick={()=>setTheme(prev=>!prev)}
     >theme</div> */}
       <Routes>
-         <Route path="/" element={<MainComponent/>} ></Route>
-         <Route path="/sendemail" element={<EmailTemplate/>}></Route>
-         <Route path="/uploadexcel" element={<UploadExcelComponent/>}></Route>
-         <Route path="/emailtemplate" element={<EmailTemplate/>}></Route>
+        <Route index path="/" element={<MainComponent/>}></Route>
+            <Route path="/select-template" element={<SelectTemplate />}></Route>
+            <Route path="/generate-certificate" element={<GenerateCertificate />}></Route>
+            <Route path="/view-certificate" element={<ViewCertificate />}></Route>
+            <Route path="/send-mail" element={<SendMail />}></Route>            
       </Routes>
     </div>
-    </MenuRefProvider>
+    {/* </MenuRefProvider> */}
+    </>
   )
 }
 
