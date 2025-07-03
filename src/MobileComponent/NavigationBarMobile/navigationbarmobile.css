@@ -89,6 +89,14 @@ li{
    
     
 }
+.navigation--mobile--bar--tag--mobile--light--5{
+    transition:1.3s;
+    color:rgb(0, 0, 0);
+    background-color:rgba(202, 217, 237, 0.571);
+    border-radius:100px;
+   
+    
+}
 
 .navigation--mobile--bar--tag--mobile--light--3{
     transition:1.3s;
@@ -115,6 +123,15 @@ li{
    
 }
 .navigation--mobile--bar--tag--mobile--dark--4{
+    transition:1.3s;
+    color:rgb(255,255,255);
+    background-color:rgba(58, 57, 57, 0.591);
+    border-radius:100px;
+
+    
+}
+
+.navigation--mobile--bar--tag--mobile--dark--5{
     transition:1.3s;
     color:rgb(255,255,255);
     background-color:rgba(58, 57, 57, 0.591);
