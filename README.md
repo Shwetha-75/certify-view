@@ -66,7 +66,7 @@
    | Title | Description |
    | ----  | ------------|    
    | Auth Services | Manages registeration, signin using OAuth google & aplication login / registeration services |
-   | Certificate Services | CRUD operations on certificate (create | read | update | delete) |
+   | Certificate Services | CRUD operations on certificate (create \| read \| update \| delete) |
    | Mail Services | Sends the certificate via mails |
    | Template Services | Provides all the tamplates from database to user  |
 
